@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- <header> используется для шапки сайта — логотип и навигация -->
+    <header>
+        <!-- <nav> семантически обозначает блок навигации по сайту -->
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Фотогалерея</a></li>
+                <li><a href="videogallery.html">Видео галерея</a></li>
+                <li><a href="register.html">Вступить в отряд</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <main> содержит основной уникальный контент страницы, используется один раз -->
+    <main>
+
+        <!-- <section> группирует тематически связанный контент — раздел "о нас" -->
+        <section class="hero-section">
+            <h1>Сайт отряда MetallBirds</h1>
+
+            <!-- <figure> семантически обозначает иллюстрацию, связанную с контентом -->
+            <figure>
+                <img src="MetallBirds.png" alt="Логотип отряда MetallBirds"
+                     style="max-width: 600px; width: 100%; border-radius: 8px; border: 2px solid #4f4f4f;">
+                <!-- <figcaption> подпись к изображению внутри figure -->
+                <figcaption>Эмблема отряда MetallBirds</figcaption>
+            </figure>
+        </section>
+
+        <!-- <section> отдельный раздел со списком мест — тематически отличается от hero -->
+        <section class="plans-section">
+            <h2>Места, которые мы планируем посетить</h2>
+            <ol>
+                <li>Заброшенный Брянский военный завод</li>
+                <li>Посёлок Дальний Клин</li>
+                <li>Заброшенная школа</li>
+                <li>Военный городок воинской части № 52096</li>
+                <li>Дол Лесные Голоса</li>
+            </ol>
+        </section>
+
+        <!-- <aside> для дополнительной информации, не являющейся основным контентом -->
+        <aside class="info-aside">
+            <h3>О нас</h3>
+            <p>MetallBirds — отряд исследователей заброшенных объектов города и области.</p>
+        </aside>
+
+    </main>
+
+    <!-- <footer> содержит вспомогательную информацию: копирайт, контакты -->
+    <footer>
+        <p>&copy; создатель сайта Signa.</p>
+    </footer>
+
+</body>
+</html>

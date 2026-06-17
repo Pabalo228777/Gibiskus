@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотогалерея</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+    <style>
+        .gallery-title {
+            font-family: 'Georgia', serif;
+            font-size: 32px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .gallery-subtitle {
+            font-family: 'Courier New', monospace;
+            font-size: 15px;
+            text-align: center;
+            color: #aaaaaa;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: #3a3a3a;
+            border: 2px solid #4f4f4f;
+            border-radius: 8px;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 0, 0, 0.2);
+            border-color: #ff0000;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .card h3 {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 18px;
+            color: #ffffff;
+            margin: 10px 0 5px 0;
+        }
+
+        .card p {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #cccccc;
+            line-height: 1.5;
+        }
+
+        .map-link-block {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #1a1a1a;
+            border: 2px dashed #4f4f4f;
+            border-radius: 8px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Фотогалерея</a></li>
+                <li><a href="videogallery.html">Видео галерея</a></li>
+                <li><a href="register.html">Вступить в отряд</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="gallery-title">Галерея исследованных объектов</h2>
+
+        <div class="flex-container">
+
+            <div class="card">
+                <img src="1.png" alt="Объект 1">
+                <h3>Пластмассовая ванна</h3>
+                <!-- Строчные стили в атрибуте style по требованию ТЗ -->
+                <p><span style="color: #ff6666; font-weight: bold;">Локация:</span> у здания заброшенного дет. сада</p>
+            </div>
+
+            <div class="card">
+                <img src="2.png" alt="Объект 2">
+                <h3>Комната</h3>
+                <p><span style="color: #ff6666; font-weight: bold;">Локация:</span> утерянная комната нашей прошлой базы</p>
+            </div>
+
+            <div class="card">
+                <img src="3.png" alt="Объект 3">
+                <h3>Первый этаж военки</h3>
+                <p><span style="color: #ff6666; font-weight: bold;">Локация:</span> легендарное место нашей комнаты</p>
+            </div>
+
+            <div class="card">
+                <img src="4.png" alt="Объект 4">
+                <h3>2й этаж военки</h3>
+                <p><span style="color: #ff6666; font-weight: bold;">Локация:</span> второй этаж заброшенной военной базы</p>
+            </div>
+
+            <div class="card">
+                <img src="5.png" alt="Объект 5">
+                <h3>Второй блок бухгалтерии</h3>
+                <p><span style="color: #ff6666; font-weight: bold;">Статус:</span> <span style="color: #ff4444; font-style: italic;">утерян из-за обвалившейся крыши</span></p>
+            </div>
+
+            <div class="card">
+                <img src="6.png" alt="Объект 6">
+                <h3>Лидер клана</h3>
+                <p><span style="color: #ff6666; font-weight: bold;">Примечание:</span> Инвалид</p>
+            </div>
+
+            <div class="card">
+                <img src="7.png" alt="Объект 7">
+                <h3>...</h3>
+                <p><span style="color: #888888; font-style: italic;">Информация засекречена</span></p>
+            </div>
+
+            <div class="card">
+                <img src="9.png" alt="Объект 8">
+                <h3>У закрытого магаза</h3>
+                <p><span style="color: #ff6666; font-weight: bold;">Занятие:</span> вожу кирпичи</p>
+            </div>
+
+            <div class="card">
+                <img src="8.png" alt="Объект 9">
+                <h3>Добыча кирпичей</h3>
+                <p><span style="color: #ff6666; font-weight: bold;">Комментарий:</span> <span style="font-style: italic;">банально</span></p>
+            </div>
+
+        </div>
+
+        <div class="map-link-block">
+            <p style="margin: 0; font-size: 15px;">
+                У нас есть карта — 
+                <a href="https://pabalo228777.github.io/Gedundi/" target="_blank"
+                   style="color: #ff0000; font-weight: bold; text-decoration: underline;">открыть карту</a>
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; создатель сайта Signa</p>
+    </footer>
+
+</body>
+</html>
